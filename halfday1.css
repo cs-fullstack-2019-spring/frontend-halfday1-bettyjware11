@@ -1,19 +1,21 @@
+/*css to format grid to look similar to picture*/
 h4
 {
     grid-row: 1;
+    text-align: center;
+    margin: auto;
 }
-
-body
-{
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-}
-
 
 
 .container {
     grid-row: 2;
     display: grid;
     margin: 20% 20%;
+
+}
+
+.container2 {
+    display: inline-grid;
 
 }
 
@@ -30,17 +32,17 @@ body
 #Sec2 {
     border: 1px solid red;
     display: inline-block;
-    grid-column: 3/4;
+    grid-column: 3 / 4;
     grid-row: 2;
 
 
 }
 
 #choice {
-    grid-column: 3/4;
+    grid-column: 3 / 4;
     grid-row: 3;
     border: 1px solid blue;
-    display: inline-block;
+    display: block;
 }
 
 
@@ -63,7 +65,7 @@ body
     grid-column: 4/5;
     grid-row: 3;
     border: 1px solid blue;
-    display: inline-block;
+    display: block;
 }
 
 body {
@@ -72,10 +74,6 @@ body {
     padding: 2px
 }
 
-h4 {
-    text-align: center;
-    margin: auto;
-}
 
 footer
 {
@@ -83,7 +81,7 @@ footer
     grid-row: 4;
     text-align: center;
 }
-
+/*to change colors...*/
 #red {
     background-color: red;
 }

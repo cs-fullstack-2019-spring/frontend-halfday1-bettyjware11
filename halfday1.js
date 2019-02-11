@@ -1,13 +1,32 @@
-var currentPlayer = 1;
+//javascript to set up functions...
+var clicks = 0;
+function onClick()
+{
+    clicks+=1;
+    document.getElementById("clicks").innerHTML=clicks;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+var player1Clicks = "";
+var player2Clicks = "";
 var count ="";
 var player = document.getElementById("player");
 var resetButton = document.querySelector("button");
 
+var tieChecker = "";
 
-var player1Clicks = 0;
-var player2Clicks = 0;
-var tieChecker = 0;
-
+//function to count clicks...
 function clickCounter()
 {
     numberOfClicks = count;
@@ -29,25 +48,27 @@ function clickCounter()
 
 
 
-
-function changeColorRed(red) {
+//Function to change color to red when button is clicked...
+function changeColorRed() {
     var elem = document.getElementById('red');
-    elem.style.color = red;
+    elem.style.color = "red";
 }
-document.getElementById(red).onclick(changeColorRed());
 
+console.log(document.getElementById("red"));
+document.getElementById("red").onclick=changeColorRed;
 
+//function to change color to yello when button is clicked...
 function changeColorYellow(yellow) {
     var elem = document.getElementById('yellow');
-    elem.style.color = yellow;
+    elem.style.color = "yellow";
 }
-document.getElementById("yellow").onclick(changeColorYellow());
+document.getElementById("yellow").onclick=changeColorYellow;
 
-
+//function to change color to blue when button is clicked...
 function changeColorBlue(blue) {
-    var elem = document.getElementById('blue"');
+    var elem = document.getElementById('blue');
     elem.style.color =('blue');
 
 }
 
-document.getElementById('blue').onclick(changeColorBlue());
+document.getElementById('blue').onclick=changeColorBlue;
