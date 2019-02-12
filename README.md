@@ -15,3 +15,5 @@ If you need more help use the steps below:
 4) Make keyboard and mouse options. Disable and stop events from happening when the option is not chosen.
 5) Toggle background colors on and off.
 6) Once a player reaches 15, alert the winner and restart the game.
+<hr>
+1 point. Most of the design was started, but the interactive part is not complete.
